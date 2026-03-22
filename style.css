@@ -257,3 +257,37 @@ footer {
     font-family: var(--font-heading);
     font-size: 0.9rem;
 }
+/* Update to Skills to include icons */
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.skill-card i {
+    font-size: 2rem;
+    color: var(--neon-secondary);
+    margin-bottom: 0.5rem;
+}
+
+/* Image Styling for Achievements */
+.achievement-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(102, 252, 241, 0.2);
+    transition: transform 0.4s ease;
+}
+
+.card {
+    overflow: hidden; /* Keeps the zoomed image inside the box */
+}
+
+.card:hover .achievement-img {
+    transform: scale(1.05); /* Slight zoom on hover for interactivity */
+    border-color: var(--neon-primary);
+}
