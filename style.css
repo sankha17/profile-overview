@@ -291,3 +291,80 @@ footer {
     transform: scale(1.05); /* Slight zoom on hover for interactivity */
     border-color: var(--neon-primary);
 }
+/* Profile Image */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--neon-primary);
+    box-shadow: 0 0 20px rgba(102, 252, 241, 0.5);
+    margin-bottom: 1.5rem;
+}
+
+/* About Container */
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 2rem;
+    background: var(--surface-color);
+    border-radius: 8px;
+    border-left: 4px solid var(--neon-secondary);
+}
+
+/* Document/Image Placeholders in Timeline & Cards */
+.doc-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 1rem;
+    border: 1px solid rgba(197, 108, 240, 0.4);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.doc-img:hover {
+    transform: scale(1.05);
+    border-color: var(--neon-secondary);
+    box-shadow: 0 0 15px rgba(197, 108, 240, 0.4);
+}
+
+/* Recommendations */
+.recommendation-card {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--surface-color);
+    padding: 3rem;
+    border-radius: 8px;
+    position: relative;
+    border-top: 3px solid var(--neon-primary);
+}
+
+.quote-icon {
+    font-size: 3rem;
+    color: rgba(102, 252, 241, 0.2);
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.quote-text {
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.quote-author h4 {
+    color: var(--neon-primary);
+    font-family: var(--font-heading);
+}
+
+.quote-author p {
+    font-size: 0.9rem;
+    color: #888;
+}
