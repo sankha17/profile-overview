@@ -3,23 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sankha Sudha Ghosh | Portfolio OS</title>
+    <title>Sankha Sudha Ghosh | Spatial OS</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">SANKHA<span class="neon-text">_OS</span></div>
+    <div class="ambient-background">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <nav class="navbar glass-panel">
+        <div class="logo">SANKHA<span class="gradient-text">_OS</span></div>
         <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#visitor-info">About You</a></li>
             <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Connect</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
         </ul>
         <div class="theme-switch-wrapper">
-            <select id="theme-toggle" class="theme-select">
+            <select id="theme-toggle" class="theme-select glass-input">
                 <option value="system">🖥️ System</option>
                 <option value="dark">🌙 Dark</option>
                 <option value="light">☀️ Light</option>
@@ -27,12 +33,12 @@
         </div>
     </nav>
 
-    <header id="home" class="hero">
-        <div class="hero-content">
+    <header id="home" class="hero reveal">
+        <div class="hero-content glass-panel">
             <img src="https://via.placeholder.com/150/1f2833/66fcf1?text=Your+Photo" alt="Sankha Sudha Ghosh" class="profile-img">
-            
-            <h1><span class="neon-text">SANKHA SUDHA GHOSH</span></h1>
-            <h2>Program Manager I at Uber AI Solutions | Ex-Amazon</h2>
+            <h1>SANKHA SUDHA GHOSH</h1>
+            <h2 class="subtitle">Program Manager I at Uber AI Solutions | Ex-Amazon</h2>
+            <h3 id="typewriter" class="gradient-text type-box"></h3>
             
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/sankhasudhaghosh/" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -40,46 +46,149 @@
                 <a href="https://twitter.com/YOUR_X_HANDLE" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
                 <a href="https://instagram.com/YOUR_IG_HANDLE" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
+            
             <div class="action-buttons">
-                <a href="#contact" class="btn">Initiate Connection</a>
-                <a href="Sankha_Resume.pdf" class="btn btn-outline" download>Download Resume <i class="fas fa-file-download"></i></a>
+                <a href="#contact" class="btn btn-primary">Initiate Connection</a>
+                <a href="Sankha_Resume.pdf" class="btn btn-glass" download>Resume <i class="fas fa-file-download"></i></a>
             </div>
         </div>
     </header>
 
-    <section id="about" class="section">
-        <h2 class="section-title">System <span class="neon-text">Overview</span> (About Me)</h2>
-        <div class="about-container">
+    <section id="about" class="section reveal">
+        <h2 class="section-title">System <span class="gradient-text">Overview</span></h2>
+        <div class="glass-panel about-container">
             <p>I build the operational engines that allow flagship technical products to scale globally. Currently, I serve as a Program Manager and a member of the core launch operations.</p>
         </div>
-    </section>
-
-    <section id="visitor-info" class="section">
-        <h2 class="section-title">About <span class="neon-text">You</span></h2>
-        <div class="terminal-container">
-            <p>Hi visitor, You seem to be accessing my website from the ip address 📡 <span id="v-ip" class="highlight">Scanning...</span>, your internet service provider is <span id="v-isp" class="highlight">Scanning...</span></p>
-            <br>
-            <p>I see that you are using a <span id="v-os" class="highlight">...</span> specifically a <span id="v-browser" class="highlight">...</span> browser.</p>
-            <br>
-            <p>I sense that you are currently at 🌍 <span id="v-lat" class="highlight">...</span> latitude and 🌍 <span id="v-lon" class="highlight">...</span> longitude, which is around 🏙️ <span id="v-city" class="highlight">...</span> with the 🏢 zipcode <span id="v-zip">...</span></p>
-            <br>
-            <p>Your device's screen ↕️ height is <span id="v-height" class="highlight">...</span> pixels and screen ↔️ width is <span id="v-width" class="highlight">...</span> pixels. Your device is currently in <span id="v-orientation" class="highlight">...</span> mode.</p>
-            <br>
-            <p>Your battery 🔋 seems to be having <span id="v-battery" class="highlight">...</span> charge and is currently 🔌 <span id="v-charging" class="highlight">...</span></p>
-            <br>
-            <p>Your network speed 🏃 seems to be around <span id="v-speed" class="highlight">...</span> which is effectively a <span id="v-connection" class="highlight">...</span> connection 🔗</p>
-            <br>
-            <p>Your browser / device is set to <span id="v-theme" class="highlight">...</span> 🌓 mode.</p>
+        <div class="skills-grid">
+            <div class="glass-panel skill-card"><i class="fas fa-database"></i> SQL & JQL</div>
+            <div class="glass-panel skill-card"><i class="fab fa-python"></i> Python & APIs</div>
+            <div class="glass-panel skill-card"><i class="fas fa-robot"></i> RPA Automation</div>
+            <div class="glass-panel skill-card"><i class="fab fa-html5"></i> HTML & CSS</div>
+            <div class="glass-panel skill-card"><i class="fas fa-project-diagram"></i> Program Mgt</div>
         </div>
     </section>
 
-    <section id="contact" class="section">
-        <h2 class="section-title">Initiate <span class="neon-text">Connection</span></h2>
-        <p style="text-align: center;">Contact: <a href="mailto:ghsankha17@gmail.com" class="neon-text">ghsankha17@gmail.com</a></p>
+    <section id="visitor-info" class="section reveal">
+        <h2 class="section-title">About <span class="gradient-text">You</span></h2>
+        <div class="glass-panel text-center" style="max-width: 600px; margin: 0 auto; padding: 3rem;">
+            <p style="margin-bottom: 1.5rem; font-size: 1.1rem;">Curious about the digital footprint you leave behind across the web?</p>
+            <button id="reveal-btn" class="btn btn-primary">Let me see what I know about you 🕵️‍♂️</button>
+        </div>
+
+        <div id="terminal-screen" class="glass-panel terminal-container" style="display: none; margin-top: 2rem;">
+            <div class="window-controls">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            </div>
+            <div class="terminal-body">
+                <p>> Analyzing incoming connection...</p>
+                <p>> IP Address: <span id="v-ip" class="highlight">Scanning...</span> (ISP: <span id="v-isp" class="highlight">Scanning...</span>)</p>
+                <p>> System OS: <span id="v-os" class="highlight">...</span> | Browser Engine: <span id="v-browser" class="highlight">...</span></p>
+                <p>> Geolocation Estimate: 🌍 Lat <span id="v-lat" class="highlight">...</span>, Lon <span id="v-lon" class="highlight">...</span> (<span id="v-city" class="highlight">...</span> - <span id="v-zip">...</span>)</p>
+                <p>> Display Metrics: <span id="v-width" class="highlight">...</span>x<span id="v-height" class="highlight">...</span>px (<span id="v-orientation" class="highlight">...</span>)</p>
+                <p>> Power Status: <span id="v-battery" class="highlight">...</span> (<span id="v-charging" class="highlight">...</span>)</p>
+                <p>> Network Telemetry: <span id="v-speed" class="highlight">...</span> | Type: <span id="v-connection" class="highlight">...</span></p>
+                <p>> Interface Preference: <span id="v-theme" class="highlight">...</span> mode.</p>
+                <p class="blink-cursor">> _</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section reveal">
+        <h2 class="section-title">Operational <span class="gradient-text">Log</span></h2>
+        <div class="timeline">
+            <div class="glass-panel timeline-item">
+                <div class="timeline-dot"></div>
+                <h3>Program Manager I @ Uber AI Solutions</h3>
+                <span class="date">Sep 2025 - Present | Hyderabad, India</span>
+                <p>Central Supply Operations. Building operational engines and scaling flagship technical products.</p>
+            </div>
+            <div class="glass-panel timeline-item">
+                <div class="timeline-dot"></div>
+                <h3>Associate Program Manager @ Uber</h3>
+                <span class="date">Aug 2024 - Aug 2025 | Hyderabad, India</span>
+                <p>Global Scaled Solutions - Strategy and Planning.</p>
+                <img src="https://via.placeholder.com/300x150/1f2833/c56cf0?text=GSS_Apr25.png" alt="GSS Strategy Document" class="doc-img">
+            </div>
+            <div class="glass-panel timeline-item">
+                <div class="timeline-dot"></div>
+                <h3>Program Specialist III & IV @ Uber</h3>
+                <span class="date">Jul 2022 - Jul 2024 | Hyderabad, India</span>
+                <p>Advanced through internship and Specialist III roles, optimizing workflows and executing scaled solutions.</p>
+            </div>
+            <div class="glass-panel timeline-item">
+                <div class="timeline-dot"></div>
+                <h3>Catalog Specialist @ Amazon</h3>
+                <span class="date">Oct 2020 - Aug 2021 | Bengaluru, India</span>
+                <p>Managed catalog operations, ensuring high-quality data and operational excellence.</p>
+                <img src="https://via.placeholder.com/300x150/1f2833/c56cf0?text=RnR+Award+Recognition" alt="Amazon RnR Award" class="doc-img">
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section reveal">
+        <h2 class="section-title">Knowledge <span class="gradient-text">Base</span></h2>
+        <div class="cards-container">
+            <div class="glass-panel card">
+                <i class="fas fa-graduation-cap icon"></i>
+                <h3>B.Tech, Electrical Engineering</h3>
+                <p class="date">Maulana Abul Kalam Azad University | 2017 - 2020</p>
+            </div>
+            <div class="glass-panel card">
+                <i class="fas fa-scroll icon"></i>
+                <h3>Diploma, Electrical Engineering</h3>
+                <p class="date">West Bengal State Council | 2014 - 2017</p>
+            </div>
+            <div class="glass-panel card">
+                <i class="fas fa-certificate icon"></i>
+                <h3>Programming Foundations</h3>
+                <p class="date">Duke University | Coursera | Jun 2020</p>
+                <img src="https://via.placeholder.com/300x150/1f2833/66fcf1?text=Duke+Certificate" alt="Duke Certificate" class="doc-img">
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section reveal">
+        <h2 class="section-title">Deployments & <span class="gradient-text">Volunteering</span></h2>
+        <div class="timeline">
+            <div class="glass-panel timeline-item">
+                <div class="timeline-dot"></div>
+                <h3>IOT Based Biometric Attendance System (Arduino)</h3>
+                <span class="date">Jun 2019 - May 2020 | Project</span>
+                <p>Worked on IoT-based biometric attendance system using WiFi modules.</p>
+            </div>
+            <div class="glass-panel timeline-item">
+                <div class="timeline-dot"></div>
+                <h3>Event Coordinator & Placement Rep</h3>
+                <span class="date">Jun 2019 - May 2020 | Volunteering</span>
+                <p>RCC Institute of Information Technology. Treasurer & Overall Coordinator for Technical and Cultural fests.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="recommendations" class="section reveal">
+        <h2 class="section-title">Peer <span class="gradient-text">Endorsements</span></h2>
+        <div class="glass-panel recommendation-card">
+            <i class="fas fa-quote-left quote-icon"></i>
+            <p class="quote-text">"Sankha is an excellent resource, and has been a real gem to the team. He makes sure all the deadlines are met and that also with the highest standards. He is a hardworking and dedicated person who will complete your project in a given time frame."</p>
+            <div class="quote-author">
+                <h4>Surya Kumar</h4>
+                <p>Program Manager III at Amazon</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section reveal">
+        <h2 class="section-title">Initiate <span class="gradient-text">Connection</span></h2>
+        <form action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST" class="glass-panel contact-form">
+            <input type="text" name="name" class="glass-input" placeholder="Enter Designation/Name" required>
+            <input type="email" name="email" class="glass-input" placeholder="Enter Comms Link (Email)" required>
+            <textarea name="message" rows="5" class="glass-input" placeholder="Enter Message Data..." required></textarea>
+            <button type="submit" class="btn btn-primary" style="margin-top: 1rem;">Transmit Message</button>
+        </form>
     </section>
 
     <footer>
-        <p>&copy; 2026 Sankha Sudha Ghosh. All systems operational.</p>
+        <p>&copy; 2026 Sankha Sudha Ghosh. Spatial OS Active.</p>
     </footer>
 
     <script src="script.js"></script>
